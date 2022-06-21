@@ -1,0 +1,161 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header {
+
+    background-color: black;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.nav {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    padding-top: 10px;
+    opacity: 50%;
+    font-family: 'Quicksand', sans-serif;
+
+    &-logo {
+        height: 75px;
+        width: auto;
+        justify-content: space-between;
+    }
+
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+
+        @media(max-width:786px) {
+            position: fixed;
+            left: -100%;
+            top: 70px;
+            gap: 0;
+            flex-direction: column;
+            background: rgba(0, 0, 0, 0.9);
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+
+            &.active {
+                left: 0;
+            }
+        }
+    }
+
+    &-link {
+        transition: 0.7s ease;
+
+        &:hover {
+            color: rgb(156, 104, 130);
+        }
+
+    }
+
+    &-item {
+        @media(max-width:786px) {
+            margin: 16px;
+            background: none;
+        }
+
+    }
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background-color: white;
+}
+
+.parallax {
+    background-image: url('../../images/header.png');
+    min-height: 700px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+
+    @media(max-width:786px) {
+        background-attachment: inherit !important;
+    }
+
+}
+
+.footer {
+    color: aliceblue;
+    justify-content: space-between;
+
+    &__logo {
+        height: 200px;
+        width: auto;
+        padding-top: 25px;
+        padding-left: 50px;
+    }
+
+    @media(max-width:786px) {
+        display: block;
+        text-align: center;
+        padding-top: 50px;
+    }
+}
+
+.col {
+    opacity: 50%;
+    padding-top: 20px;
+}
+
+.row {
+    color: aliceblue;
+    background-color: black;
+    text-decoration-style: solid;
+}
+
+.svg {
+    padding-top: 20px;
+}
+
+@media(max-width:786px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
