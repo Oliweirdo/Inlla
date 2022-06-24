@@ -1,132 +1,50 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.centered {
+  margin: 0 auto;
+  width: 1400px;
 }
 
-@media (max-width: 786px) {
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -1rem -1rem;
-  }
-  .gallery__image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 400ms ease-out;
-  }
-  .gallery__image:hover {
-    transform: scale(1.15);
-  }
-  .gallery__item {
-    flex: 1 0 24rem;
-    margin: 1rem;
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-  }
-  .gallery__item__portfolio {
-    padding-bottom: 50px;
-    text-align: center;
-    flex: 1 0 24rem;
-    margin: 1rem;
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-    padding-bottom: 50px;
-    text-align: center;
-  }
+.gallery__grid__large > img {
+  padding: 8px;
+  width: 1400px;
+  box-sizing: padding-box;
 }
+
+.gallery__grid__large {
+  box-sizing: content-box;
+  align-items: center;
+  display: block;
+  justify-content: center;
+}
+
 .image__grid {
-  --gap: 10px;
+  --gap: 8px;
   --num-cols: 2;
-  box-sizing: border-box;
   padding: var(--gap);
-  display: flex;
+  width: 1400px;
+  padding-right: 0;
+  display: grid;
   grid-template-columns: repeat(var(--num-cols), 1fr);
-  grid-auto-rows: var(--row-height);
-  gap: var(--gap);
 }
 
 .image__grid__3 {
-  --gap: 10px;
+  --gap: 5px;
   --num-cols: 3;
-  box-sizing: border-box;
   padding: var(--gap);
-  display: flex;
+  width: 1400px;
+  padding-right: 5px;
+  display: grid;
   grid-template-columns: repeat(var(--num-cols), 1fr);
-  grid-auto-rows: var(--row-height);
   gap: var(--gap);
 }
 
 .image__grid__3 > img {
-  display: block;
-  width: 300px;
+  width: 460px;
   height: auto;
-  margin: auto;
 }
 
 .image__grid > img {
-  display: block;
-  width: 700px;
+  width: 690px;
   height: auto;
-  margin: auto;
-}
-
-/* Popup Style*/
-div#quad {
-  font-size: 0;
-  width: 100%;
-}
-
-div#quad figure {
-  padding: 50px 50px;
-  margin: 0;
-  width: 100%;
-  max-width: 10000px;
-  height: auto;
-  transition: 1s;
-}
-@media (max-width: 786px) {
-  div#quad figure {
-    padding: 15px 15px;
-  }
-}
-
-div#quad figure:hover {
-  cursor: pointer;
-  z-index: 4;
-}
-
-div#quad figure img {
-  width: 100%;
-  height: auto;
-}
-
-div#quad figure figcaption {
-  margin: 0;
-  opacity: 0;
-  background: #fff;
-  color: #fff;
-  padding: 0.3rem;
-  font-size: 1.2rem;
-  bottom: 0;
-  width: 100%;
-  transition: 1s 1s opacity;
-}
-
-.expanded {
-  transform: scale(2);
-  z-index: 5;
-  display: flex;
-  justify-content: center;
-}
-
-div#quad figure.expanded figcaption {
-  opacity: 1;
-}
-
-div.full figure:not(.expanded) {
-  pointer-events: none;
 }
 
 /*# sourceMappingURL=gallery.css.map */
