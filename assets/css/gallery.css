@@ -1,7 +1,3 @@
-body {
-  background-color: black;
-}
-
 .centered {
   margin: 0 auto;
   width: 1400px;
@@ -20,7 +16,7 @@ body {
   justify-content: center;
 }
 
-.image__grid {
+.image__grid .a {
   --gap: 8px;
   --num-cols: 2;
   padding: var(--gap);
@@ -30,7 +26,7 @@ body {
   grid-template-columns: repeat(var(--num-cols), 1fr);
 }
 
-.image__grid__3 {
+.image__grid__3 .a {
   --gap: 5px;
   --num-cols: 3;
   padding: var(--gap);
