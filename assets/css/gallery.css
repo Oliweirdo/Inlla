@@ -53,14 +53,32 @@
   gap: var(--gap);
 }
 
+.image__grid__4 .a {
+  --gap: 5px;
+  --num-cols: 3;
+  padding: var(--gap);
+  width: 1400px;
+  padding-right: 5px;
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  gap: var(--gap);
+}
+
 .image__grid__3 > img {
   width: 460px;
   height: auto;
 }
 
+.image__grid__4 > img {
+  width: 345px;
+  height: auto;
+  padding-bottom: 5px;
+}
+
 .image__grid > img {
   width: 690px;
   height: auto;
+  padding-top: 5px;
 }
 
 /*# sourceMappingURL=gallery.css.map */
