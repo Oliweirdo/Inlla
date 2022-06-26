@@ -1,6 +1,23 @@
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 4rem;
+	}
+
+	.gallery,
+	.gallery-image {
+		margin: 0;
+	}
+    
+}
 .centered {
     margin: 0 auto;
     width: 1400px;
+    @media (max-width: 786px) {
+		padding: 5px 5px;
+	}
+	
 }
 .gallery__grid__large>img {
     padding: 8px;
