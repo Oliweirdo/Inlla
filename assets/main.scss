@@ -2,6 +2,9 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    @media(max-width:786px) {
+        overflow-x:hidden;
+    }
 }
 
 header {
