@@ -98,9 +98,8 @@
 @media (max-width: 786px) {
   .image__grid__4 > img {
     padding: 2px;
-    width: 100px;
-    gap: 2px;
-    display: block;
+    width: 108px;
+    gap: 1px;
   }
 }
 
