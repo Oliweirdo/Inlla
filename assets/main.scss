@@ -51,7 +51,6 @@ a {
 
     @media(max-width:786px) {
         font-size: 13px;
-        overflow-x: hidden;
         padding: 3px;
     }
 }
@@ -87,7 +86,7 @@ a {
     font-size: 1vw;
     @media(max-width:786px) {
         font-size: 13px;
-        overflow-x: hidden;
+        width: 400px;
         padding-top: 50px;
     }
   
@@ -216,6 +215,7 @@ a {
 .portrait {
     width: 600px;
     height: auto;
+    padding-top: 150px;
     border-bottom: double 5px rgba(0, 0, 0, 0.5);
 
     @media(max-width:786px) {
