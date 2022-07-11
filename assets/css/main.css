@@ -25,6 +25,17 @@ header {
   background-color: black;
 }
 
+.title {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  color: rgb(156, 104, 130);
+}
+@media (max-width: 786px) {
+  .title {
+    font-size: 20px;
+  }
+}
+
 li {
   list-style: none;
 }
@@ -68,12 +79,17 @@ a {
   }
 }
 
+.portrait_small {
+  width: 400px;
+}
+
 .lead__about {
   margin: 0 auto;
   text-align: center;
   align-items: center;
   padding-top: 150px;
   height: auto;
+  font-size: 1vw;
 }
 @media (max-width: 786px) {
   .lead__about {
@@ -108,7 +124,6 @@ a {
 
 .right__side__about {
   margin: 0 auto;
-  padding-top: 150px;
 }
 @media (max-width: 786px) {
   .right__side__about {

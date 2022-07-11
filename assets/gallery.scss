@@ -77,6 +77,28 @@
     grid-template-columns: repeat(var(--num-cols), 1fr);
     gap: var(--gap);
 }
+.image__grid__5 .a {
+    --gap: 5px;
+    --num-cols: 5;
+    padding: var(--gap);
+    width: 1400px;
+
+    padding-right: 5px;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    gap: var(--gap);
+}
+.image__grid__5>img{
+    width: auto ;
+    height:320px;
+    padding-bottom: 5px;
+    @media (max-width: 786px) {
+        padding-top: 2px;
+        width: auto;
+        height: 87px;
+    }
+}
+
 
 .image__grid__3>img {
     width: 460px;

@@ -25,6 +25,15 @@ header {
     background-color: black;
 }
 
+.title{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    color: rgb(156, 104, 130);
+    @media(max-width:786px) {
+        font-size: 20px;
+    }
+}
+ 
 li {
     list-style: none;
 }
@@ -65,21 +74,25 @@ a {
 
 }
 
+.portrait_small{
+    width:400px;
+}
+
 .lead__about {
     margin: 0 auto;
     text-align: center;
     align-items: center;
     padding-top: 150px;
     height: auto;
+    font-size: 1vw;
     @media(max-width:786px) {
         font-size: 13px;
         overflow-x: hidden;
         padding-top: 50px;
     }
-
-    
-    
+  
 }
+
 
 .right__side__about,
 .left__side__about {
@@ -94,6 +107,7 @@ a {
   @media(max-width:786px) {
     padding-bottom: 50px;
     padding-top:0;}
+    
 }
 .aboutme{
   margin: 0 auto;
@@ -101,13 +115,10 @@ a {
 }
 .right__side__about{
     margin: 0 auto;
-    padding-top: 150px;
     @media(max-width:786px) {
         padding-bottom: 50px;
         padding-top:0;}
 }
-
-
 
 .nav {
     min-height: 70px;
