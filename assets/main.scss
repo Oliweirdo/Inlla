@@ -58,7 +58,7 @@ a {
     font-family: 'Cinzel', serif;
     height: auto;
     max-height: 600px ;
-    @media screen and (min-width: 750px) {
+    @media (min-width: 750px) {
         height: 100vh;
         width: 450px;
     }
@@ -70,17 +70,42 @@ a {
     text-align: center;
     align-items: center;
     padding-top: 150px;
+    height: auto;
+    @media(max-width:786px) {
+        font-size: 13px;
+        overflow-x: hidden;
+        padding-top: 50px;
+    }
 
-        @media(max-width:786px) {
-            height: 25vh;
-            font-size: 13px;
-            overflow-x: hidden;
-            padding: 3px;
-        }
+    
     
 }
 
+.right__side__about,
+.left__side__about {
+  text-align: center;
+  align-items: center;
+  font-size: 1vw;
+  max-width: 800px;
+  margin: 0 auto;
+  text-transform: lowercase;
+  font-family: "Cinzel", serif;
+  padding-bottom: 150px;
+  @media(max-width:786px) {
+    padding-bottom: 50px;
+    padding-top:0;}
+}
+.aboutme{
+  margin: 0 auto;
 
+}
+.right__side__about{
+    margin: 0 auto;
+    padding-top: 150px;
+    @media(max-width:786px) {
+        padding-bottom: 50px;
+        padding-top:0;}
+}
 
 
 
@@ -178,21 +203,19 @@ a {
 }
 
 .portrait {
-    width: 500px;
+    width: 600px;
     height: auto;
-    padding: 20px;
-    justify-content: right;
-    padding: 50px;
     border-bottom: double 5px rgba(0, 0, 0, 0.5);
 
     @media(max-width:786px) {
-        margin: 0 auto;
         width: 300px;
-        padding: 0;
-        padding-bottom: px;
+            font-size: 13px;
+            overflow-x: hidden;
+            padding-top: 50px;
+        }
     }
 
-}
+
 
 .footer {
     color: aliceblue;
