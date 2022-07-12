@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+
+    @media(max-width:786px) {
+        overflow-x: hidden;
+    }
+}
+
+.about {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    @media(max-width:786px) {
+        padding-bottom: 20px;
+    }
+    
 }
 
 header {
@@ -9,6 +25,15 @@ header {
     background-color: black;
 }
 
+.title{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    color: rgb(156, 104, 130);
+    @media(max-width:786px) {
+        font-size: 20px;
+    }
+}
+ 
 li {
     list-style: none;
 }
@@ -16,6 +41,98 @@ li {
 a {
     color: aliceblue;
     text-decoration: none;
+}
+
+.quote {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    padding: 30px;
+    opacity: 65%;
+    text-align: justify;
+
+    @media(max-width:786px) {
+        font-size: 13px;
+        padding: 3px;
+    }
+}
+.quote__centered{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    padding: 30px;
+    opacity: 65%;
+    @media(max-width:786px) {
+        font-size: 13px;
+        padding: 3px;
+    }
+
+}
+
+.rightside,
+.leftside {
+    text-align: center;
+    align-items: center;
+    font-size: 1vw;
+    max-width: 500px;
+    margin: 0 auto;
+    text-transform: lowercase;
+    font-family: 'Cinzel', serif;
+    height: auto;
+    text-align: justify;
+    max-height: 600px ;
+    @media (min-width: 750px) {
+        height: 100vh;
+        width: 450px;
+    }
+
+}
+
+.portrait_small{
+    width:400px;
+}
+
+.lead__about {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding-top: 150px;
+    height: auto;
+    font-size: 1vw;
+    text-align: justify;
+    
+    @media(max-width:786px) {
+        font-size: 13px;
+        width: 400px;
+        padding-top: 50px;
+    }
+  
+}
+
+
+.right__side__about,
+.left__side__about {
+  text-align: center;
+  align-items: center;
+  font-size: 1vw;
+  max-width: 600px;
+  margin: 0 auto;
+  text-transform: lowercase;
+  font-family: "Cinzel", serif;
+  padding-bottom: 150px;
+  text-align: justify;
+  @media(max-width:786px) {
+    padding-bottom: 50px;
+    padding-top:0;}
+    
+}
+.aboutme{
+  margin: 0 auto;
+
+}
+.right__side__about{
+    margin: 0 auto;
+    @media(max-width:786px) {
+        padding-bottom: 50px;
+        padding-top:0;}
 }
 
 .nav {
@@ -26,7 +143,7 @@ a {
     padding: 0 24px;
     padding-top: 10px;
     opacity: 50%;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Cinzel', serif;
 
     &-logo {
         height: 75px;
@@ -75,6 +192,7 @@ a {
     }
 }
 
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -98,15 +216,33 @@ a {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: white;
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
 
     @media(max-width:786px) {
         background-attachment: inherit !important;
+        min-height: 300px;
     }
 
 }
+
+.portrait {
+    width: 600px;
+    height: auto;
+    padding-top: 150px;
+    border-bottom: double 5px rgba(0, 0, 0, 0.5);
+
+    @media(max-width:786px) {
+        width: 300px;
+            font-size: 13px;
+            overflow-x: hidden;
+            padding-top: 50px;
+        }
+    }
+
+
 
 .footer {
     color: aliceblue;
@@ -136,6 +272,7 @@ a {
     background-color: black;
     text-decoration-style: solid;
 }
+
 
 .svg {
     padding-top: 20px;

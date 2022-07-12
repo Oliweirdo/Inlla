@@ -1,20 +1,62 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+    @media (max-width: 786px) {
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+}
+
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        grid-gap: 4rem;
+    }
+
+    .gallery,
+    .gallery-image {
+        margin: 0;
+    }
+
+}
+
 .centered {
     margin: 0 auto;
     width: 1400px;
+
+    @media (max-width: 786px) {
+        padding: 0px;
+        width: 450px;
+        margin: 0 auto;
+        display: block;
+    }
+
 }
+
 .gallery__grid__large>img {
     padding: 8px;
     width: 1400px;
     box-sizing: padding-box;
+
+    @media (max-width: 786px) {
+        padding: 0;
+        padding-top: 2px;
+        width: 450px;
+        display: block;
+    }
 }
+
 .gallery__grid__large {
     box-sizing: content-box;
     align-items: center;
     display: block;
     justify-content: center;
-
 }
-.image__grid {
+
+.image__grid .a {
     --gap: 8px;
     --num-cols: 2;
     padding: var(--gap);
@@ -23,7 +65,8 @@
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
 }
-.image__grid__3 {
+
+.image__grid__3 .a {
     --gap: 5px;
     --num-cols: 3;
     padding: var(--gap);
@@ -34,12 +77,75 @@
     grid-template-columns: repeat(var(--num-cols), 1fr);
     gap: var(--gap);
 }
+.image__grid__5 .a {
+    --gap: 5px;
+    --num-cols: 5;
+    padding: var(--gap);
+    width: 1400px;
+
+    padding-right: 5px;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    gap: var(--gap);
+}
+.image__grid__5>img{
+    width: auto ;
+    height:320px;
+    padding-bottom: 5px;
+    @media (max-width: 786px) {
+        padding-top: 2px;
+        width: auto;
+        height: 87px;
+    }
+}
+
+
 .image__grid__3>img {
     width: 460px;
     height: auto;
+    padding-bottom: 5px;
+
+    @media (max-width: 786px) {
+        padding-top: 2px;
+        width: 140px;
+    }
 }
+
+.image__grid__4>img {
+    width: 345px;
+    height: auto;
+    max-height: 450px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    @media (max-width: 786px) {
+        padding: 2px;
+        width: 108px;
+        gap: 1px;
+    }
+}
+
+.image__grid__other>img {
+    width: auto;
+    max-height: 300px;
+    padding-bottom: 2px;
+    padding-top: 5px;
+
+    @media (max-width: 786px) {
+        padding: 2px;
+        width: auto;
+        gap: 2px;
+        height: 83px;
+    }
+}
+
 .image__grid>img {
     width: 690px;
     height: auto;
-}
+    padding-top: 5px;
 
+    @media (max-width: 786px) {
+        padding: 2px;
+        width: 210px;
+    }
+}
