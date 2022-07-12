@@ -3,6 +3,12 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 @media (max-width: 786px) {
   * {
@@ -43,6 +49,10 @@ li {
 a {
   color: aliceblue;
   text-decoration: none;
+  transition: 0.7s ease;
+}
+a:hover {
+  color: rgb(156, 104, 130);
 }
 
 .quote {
