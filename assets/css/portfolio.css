@@ -23,6 +23,12 @@ body {
 .opinion__photo:hover {
   transform: scale(1.15);
 }
+@media (max-width: 786px) {
+  .opinion__photo {
+    max-width: 350px;
+    height: 300px;
+  }
+}
 
 .gallery {
   display: flex;
