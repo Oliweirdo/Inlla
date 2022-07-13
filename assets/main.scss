@@ -246,10 +246,11 @@ a {
     border-bottom: double 5px rgba(0, 0, 0, 0.5);
 
     @media(max-width:786px) {
-        width: 300px;
+        width: 400px;
             font-size: 13px;
             overflow-x: hidden;
             padding-top: 50px;
+            margin: 0 auto;
         }
     }
 
