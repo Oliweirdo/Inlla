@@ -259,6 +259,11 @@ a:hover {
   }
 }
 
+.thanks {
+  padding: 150px 50px 150px 50px;
+  opacity: 100%;
+}
+
 .footer {
   color: aliceblue;
   justify-content: space-between;
