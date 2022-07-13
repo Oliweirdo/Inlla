@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
-
 * {
   padding: 0%;
   margin: 0%;
@@ -11,7 +10,6 @@
   -o-user-select: none;
   user-select: none;
 }
-
 @media (max-width: 786px) {
   * {
     overflow-x: hidden;
@@ -23,7 +21,6 @@
   color: rgba(0, 0, 0, 0.7);
   align-items: center;
 }
-
 @media (max-width: 786px) {
   .about {
     padding-bottom: 20px;
@@ -39,7 +36,6 @@ header {
   text-align: center;
   color: rgb(156, 104, 130);
 }
-
 @media (max-width: 786px) {
   .title {
     font-size: 20px;
@@ -55,7 +51,6 @@ a {
   text-decoration: none;
   transition: 0.7s ease;
 }
-
 a:hover {
   color: rgb(156, 104, 130);
 }
@@ -67,7 +62,6 @@ a:hover {
   opacity: 65%;
   text-align: justify;
 }
-
 @media (max-width: 786px) {
   .quote {
     font-size: 13px;
@@ -82,7 +76,6 @@ a:hover {
   padding: 30px;
   opacity: 65%;
 }
-
 @media (max-width: 786px) {
   .quote__centered {
     font-size: 13px;
@@ -104,11 +97,9 @@ a:hover {
   text-align: justify;
   max-height: 600px;
 }
-
 @media (min-width: 750px) {
-
   .rightside,
-  .leftside {
+.leftside {
     height: 100vh;
     width: 450px;
   }
@@ -127,14 +118,11 @@ a:hover {
   font-size: 1vw;
   text-align: justify;
 }
-
 @media (max-width: 786px) {
   .lead__about {
     font-size: 13px;
     width: 400px;
     padding-top: 50px;
-    max-width: 350px;
-
   }
 }
 
@@ -150,11 +138,9 @@ a:hover {
   padding-bottom: 150px;
   text-align: justify;
 }
-
 @media (max-width: 786px) {
-
   .right__side__about,
-  .left__side__about {
+.left__side__about {
     padding-bottom: 50px;
     padding-top: 0;
   }
@@ -167,7 +153,6 @@ a:hover {
 .right__side__about {
   margin: 0 auto;
 }
-
 @media (max-width: 786px) {
   .right__side__about {
     padding-bottom: 50px;
@@ -185,20 +170,17 @@ a:hover {
   opacity: 50%;
   font-family: "Cinzel", serif;
 }
-
 .nav-logo {
   height: 75px;
   width: auto;
   justify-content: space-between;
 }
-
 .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
 }
-
 @media (max-width: 786px) {
   .nav-menu {
     position: fixed;
@@ -211,25 +193,27 @@ a:hover {
     text-align: center;
     transition: 0.3s;
   }
-
   .nav-menu.active {
     left: 0;
   }
 }
-
 .nav-link {
   transition: 0.7s ease;
 }
-
 .nav-link:hover {
   color: rgb(156, 104, 130);
 }
-
 @media (max-width: 786px) {
   .nav-item {
     margin: 16px;
     background: none;
   }
+}
+
+.mainpage {
+  border-radius: 50%;
+  max-height: 400px;
+  width: auto;
 }
 
 .hamburger {
@@ -260,9 +244,26 @@ a:hover {
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
 }
-
 @media (max-width: 786px) {
   .parallax {
+    background-attachment: inherit !important;
+    min-height: 300px;
+  }
+}
+
+.parallax2 {
+  background-image: url("../../images/portfolio/8.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(10, 0, 0);
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+}
+@media (max-width: 786px) {
+  .parallax2 {
     background-attachment: inherit !important;
     min-height: 300px;
   }
@@ -274,7 +275,6 @@ a:hover {
   padding-top: 150px;
   border-bottom: double 5px rgba(0, 0, 0, 0.5);
 }
-
 @media (max-width: 786px) {
   .portrait {
     width: 400px;
@@ -294,14 +294,12 @@ a:hover {
   color: aliceblue;
   justify-content: space-between;
 }
-
 .footer__logo {
   height: 200px;
   width: auto;
   padding-top: 25px;
   padding-left: 50px;
 }
-
 @media (max-width: 786px) {
   .footer {
     display: block;
@@ -329,15 +327,12 @@ a:hover {
   .hamburger {
     display: block;
   }
-
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }

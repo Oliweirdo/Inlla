@@ -216,6 +216,11 @@ a {
     }
 }
 
+.mainpage {
+    border-radius: 50%;
+    max-height: 400px;
+    width: auto;
+}
 
 .hamburger {
     display: none;
@@ -251,6 +256,25 @@ a {
     }
 
 }
+
+.parallax2 {
+    background-image: url('../../images/portfolio/8.jpg');
+    min-height: 600px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(10, 0, 0);
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+
+    @media(max-width:786px) {
+        background-attachment: inherit !important;
+        min-height: 300px;
+    }
+
+}
+
 
 .portrait {
     width: 600px;
