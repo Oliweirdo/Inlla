@@ -11,6 +11,24 @@ body {
     padding-bottom: 50px;
 }
 
+
+.opinion__photo{
+    width: 600px;
+    height: 500px;
+    display: block;
+    flex: 1 0 24rem;
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    
+
+
+
+    transition: transform 400ms ease-out;
+
+    &:hover {
+        transform: scale(1.15);
+    }
+}
 .gallery {
     display: flex;
     flex-wrap: wrap;
