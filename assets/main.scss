@@ -23,6 +23,7 @@
 
     @media(max-width:786px) {
         padding-bottom: 20px;
+
     }
 
 }
@@ -120,7 +121,7 @@ a {
 
     @media(max-width:786px) {
         font-size: 13px;
-        width: 400px;
+        max-width: 350px;
         padding-top: 50px;
     }
 
@@ -142,6 +143,7 @@ a {
     @media(max-width:786px) {
         padding-bottom: 50px;
         padding-top: 0;
+        width: 400px;
     }
 
 }
@@ -157,6 +159,7 @@ a {
     @media(max-width:786px) {
         padding-bottom: 50px;
         padding-top: 0;
+        width: 400px;
     }
 }
 
