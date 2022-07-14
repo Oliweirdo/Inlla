@@ -189,13 +189,15 @@ a:hover {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
+    background: black;
     width: 100%;
     text-align: center;
     transition: 0.3s;
   }
   .nav-menu.active {
     left: 0;
+    position: relative;
+    padding-bottom: 50px;
   }
 }
 .nav-link {
@@ -234,7 +236,8 @@ a:hover {
   background-color: white;
 }
 
-.parallax {
+.parallax,
+.parallax2 {
   background-image: url("../../images/background1.png");
   min-height: 700px;
   background-attachment: fixed;
@@ -246,25 +249,8 @@ a:hover {
   -o-background-size: 100% auto;
 }
 @media (max-width: 786px) {
-  .parallax {
-    background-attachment: inherit !important;
-    min-height: 300px;
-  }
-}
-
+  .parallax,
 .parallax2 {
-  background-image: url("../../images/portfolio/8.jpg");
-  min-height: 600px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgb(10, 0, 0);
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
-}
-@media (max-width: 786px) {
-  .parallax2 {
     background-attachment: inherit !important;
     min-height: 300px;
   }
