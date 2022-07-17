@@ -136,11 +136,12 @@ a {
 
 }
 
-.cennik>img {
-    max-width: 750px;
+.cennik {
+    width: 1000px;
     height: auto;
-    margin: 0 auto;
-    padding-left: 150px;
+    height: auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
 
     @media (min-width: 750px) {
         padding: 0;
