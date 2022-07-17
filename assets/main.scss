@@ -355,6 +355,8 @@ a {
 .footer {
     color: aliceblue;
     justify-content: space-between;
+    font-family: 'Ibarra Real Nova', serif;
+
 
     &__logo {
         height: 200px;
@@ -373,14 +375,28 @@ a {
 .col {
     opacity: 50%;
     padding-top: 20px;
+
+
+    @media(max-width:786px) {
+        display: block;
+        text-align: center;
+    }
 }
 
 .row {
     color: aliceblue;
     background-color: black;
     text-decoration-style: solid;
+    text-align: justify;
 }
 
+.social {
+    padding-left: 120px;
+
+    @media(max-width:786px) {
+        padding: 0;
+    }
+}
 
 .svg {
     padding-top: 20px;
