@@ -4,6 +4,12 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 
     @media(max-width:786px) {
         overflow-x: hidden;
@@ -14,10 +20,12 @@
     background-color: white;
     color: rgba(0, 0, 0, 0.7);
     align-items: center;
+
     @media(max-width:786px) {
         padding-bottom: 20px;
+
     }
-    
+
 }
 
 header {
@@ -25,15 +33,17 @@ header {
     background-color: black;
 }
 
-.title{
+.title {
     font-family: 'Cinzel', serif;
     text-align: center;
     color: rgb(156, 104, 130);
+    padding-top: 20px;
+
     @media(max-width:786px) {
         font-size: 20px;
     }
 }
- 
+
 li {
     list-style: none;
 }
@@ -41,6 +51,11 @@ li {
 a {
     color: aliceblue;
     text-decoration: none;
+    transition: 0.7s ease;
+
+    &:hover {
+        color: rgb(156, 104, 130);
+    }
 }
 
 .quote {
@@ -53,16 +68,20 @@ a {
     @media(max-width:786px) {
         font-size: 13px;
         padding: 3px;
+        max-width: 350px;
     }
 }
-.quote__centered{
+
+.quote__centered {
     font-family: 'Cinzel', serif;
     text-align: center;
     padding: 30px;
     opacity: 65%;
+
     @media(max-width:786px) {
         font-size: 13px;
         padding: 3px;
+        max-width: 350px;
     }
 
 }
@@ -78,7 +97,8 @@ a {
     font-family: 'Cinzel', serif;
     height: auto;
     text-align: justify;
-    max-height: 600px ;
+    max-height: 600px;
+
     @media (min-width: 750px) {
         height: 100vh;
         width: 450px;
@@ -86,8 +106,8 @@ a {
 
 }
 
-.portrait_small{
-    width:400px;
+.portrait_small {
+    width: 400px;
 }
 
 .lead__about {
@@ -98,41 +118,49 @@ a {
     height: auto;
     font-size: 1vw;
     text-align: justify;
-    
+
     @media(max-width:786px) {
         font-size: 13px;
-        width: 400px;
+        max-width: 350px;
         padding-top: 50px;
     }
-  
+
 }
 
 
 .right__side__about,
 .left__side__about {
-  text-align: center;
-  align-items: center;
-  font-size: 1vw;
-  max-width: 600px;
-  margin: 0 auto;
-  text-transform: lowercase;
-  font-family: "Cinzel", serif;
-  padding-bottom: 150px;
-  text-align: justify;
-  @media(max-width:786px) {
-    padding-bottom: 50px;
-    padding-top:0;}
-    
-}
-.aboutme{
-  margin: 0 auto;
-
-}
-.right__side__about{
+    text-align: center;
+    align-items: center;
+    font-size: 1vw;
+    max-width: 600px;
     margin: 0 auto;
+    text-transform: lowercase;
+    font-family: "Cinzel", serif;
+    padding-bottom: 150px;
+    text-align: justify;
+
     @media(max-width:786px) {
         padding-bottom: 50px;
-        padding-top:0;}
+        padding-top: 0;
+        width: 400px;
+    }
+
+}
+
+.aboutme {
+    margin: 0 auto;
+
+}
+
+.right__side__about {
+    margin: 0 auto;
+
+    @media(max-width:786px) {
+        padding-bottom: 50px;
+        padding-top: 0;
+        width: 400px;
+    }
 }
 
 .nav {
@@ -163,13 +191,15 @@ a {
             top: 70px;
             gap: 0;
             flex-direction: column;
-            background: rgba(0, 0, 0, 0.9);
+            background: black;
             width: 100%;
             text-align: center;
             transition: 0.3s;
 
             &.active {
                 left: 0;
+                position: relative;
+                padding-bottom: 50px;
             }
         }
     }
@@ -192,6 +222,11 @@ a {
     }
 }
 
+.mainpage {
+    border-radius: 50%;
+    max-height: 400px;
+    width: auto;
+}
 
 .hamburger {
     display: none;
@@ -210,7 +245,8 @@ a {
     background-color: white;
 }
 
-.parallax {
+.parallax,
+.parallax2 {
     background-image: url('../../images/background1.png');
     min-height: 700px;
     background-attachment: fixed;
@@ -228,6 +264,7 @@ a {
 
 }
 
+
 .portrait {
     width: 600px;
     height: auto;
@@ -235,12 +272,18 @@ a {
     border-bottom: double 5px rgba(0, 0, 0, 0.5);
 
     @media(max-width:786px) {
-        width: 300px;
-            font-size: 13px;
-            overflow-x: hidden;
-            padding-top: 50px;
-        }
+        width: 400px;
+        font-size: 13px;
+        overflow-x: hidden;
+        padding-top: 50px;
+        margin: 0 auto;
     }
+}
+
+.thanks {
+    padding: 150px 50px 150px 50px;
+    opacity: 100%;
+}
 
 
 
