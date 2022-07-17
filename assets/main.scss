@@ -124,7 +124,6 @@ a {
     font-size: 1vw;
     max-width: 800px;
     margin: 0 auto;
-    text-transform: lowercase;
     font-family: 'Cinzel', serif;
     height: auto;
     text-align: justify;
@@ -136,6 +135,21 @@ a {
     }
 
 }
+
+.cennik>img {
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 150px;
+
+    @media (min-width: 750px) {
+        padding: 0;
+        max-width: 350px;
+        height: auto;
+    }
+
+}
+
 
 .rightside {
     text-align: center;
@@ -151,14 +165,7 @@ a {
 }
 
 .portrait_small {
-    padding-top: 70px;
-    width: 600px;
-    padding-left: 150px;
-
-    @media(max-width:786px) {
-        width: 400px;
-        padding: 0;
-    }
+    width: 400px;
 }
 
 .lead__about {
@@ -181,14 +188,14 @@ a {
 
 .right__side__about,
 .left__side__about {
+    padding-top: 50px;
     text-align: center;
     align-items: center;
     font-size: 1vw;
     max-width: 600px;
     margin: 0 auto;
-    text-transform: lowercase;
     font-family: "Cinzel", serif;
-    padding-bottom: 150px;
+    padding-bottom: 70px;
     text-align: justify;
 
     @media(max-width:786px) {
