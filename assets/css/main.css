@@ -40,6 +40,7 @@ header {
 @media (max-width: 786px) {
   .title {
     font-size: 20px;
+    overflow: hidden;
   }
 }
 
@@ -47,7 +48,7 @@ header {
   font-family: "Cinzel", serif;
   text-align: center;
   color: rgb(156, 104, 130);
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 20px;
 }
 @media (max-width: 786px) {
@@ -94,9 +95,25 @@ a:hover {
   padding: 30px;
   opacity: 65%;
   padding-top: 70px;
+  padding-bottom: 50px;
 }
 @media (max-width: 786px) {
   .quote__centered {
+    font-size: 13px;
+    padding: 3px;
+    max-width: 350px;
+  }
+}
+
+.quote__centered__main {
+  font-family: "Ibarra Real Nova", serif;
+  text-align: center;
+  font-weight: bold;
+  opacity: 65%;
+  padding-top: 70px;
+}
+@media (max-width: 786px) {
+  .quote__centered__main {
     font-size: 13px;
     padding: 3px;
     max-width: 350px;
@@ -234,12 +251,33 @@ a:hover {
   max-width: 600px;
   margin: 0 auto;
   font-family: "Ibarra Real Nova", serif;
-  padding-bottom: 100px;
+  padding-bottom: 25px;
   text-align: justify;
 }
 @media (max-width: 786px) {
   .right__side__about,
 .left__side__about {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 0;
+    width: 300px;
+  }
+}
+
+.right__side,
+.left__side {
+  text-align: center;
+  align-items: center;
+  font-size: 1vw;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Ibarra Real Nova", serif;
+  padding-bottom: 25px;
+  text-align: justify;
+}
+@media (max-width: 786px) {
+  .right__side,
+.left__side {
     padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 0;
