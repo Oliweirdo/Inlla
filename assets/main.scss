@@ -140,7 +140,7 @@ a {
         font-size: 13px;
         padding: 3px;
         padding-bottom: 10px;
-        max-width: 350px;
+        max-width: 4000px;
     }
 }
 
@@ -228,9 +228,10 @@ a {
     text-align: justify;
 
     @media (max-width: 786px) {
+        padding-left: 20px;
         padding-bottom: 10px;
         padding-top: 0;
-        width: 400px;
+        width: 450px;
     }
 }
 
