@@ -17,8 +17,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         var pass1 = prompt('Strona dostępna jest wyłącznie dla klientów. Proszę podaj hasło by przejść dalej.',' ');
         while (testV < 2) {
             if (pass1.toLowerCase() == "tost") {
-                alert('Hasło prawidłowe, zapraszam!');
-                window.open('prepare.html');
+                open('prepare.html');
                 break;
             } 
             testV+=1;
