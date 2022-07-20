@@ -251,6 +251,7 @@ a {
     padding: 0 24px;
     padding-top: 10px;
     opacity: 50%;
+    color: rgb(180, 120, 150);
     font-family: 'Cinzel', serif;
 
     &-logo {
@@ -286,7 +287,7 @@ a {
 
     &-link {
         transition: 0.7s ease;
-        color: rgb(156, 104, 130);
+        color: rgb(207, 134, 171);
 
         &:hover {
             color: rgb(156, 104, 130);
