@@ -25,7 +25,6 @@
         padding-bottom: 20px;
 
     }
-
 }
 
 header {
@@ -41,6 +40,19 @@ header {
 
     @media(max-width:786px) {
         font-size: 20px;
+    }
+}
+
+.title__main {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    color: rgb(156, 104, 130);
+    padding-top: 100px;
+    padding-bottom: 20px;
+
+    @media(max-width:786px) {
+        font-size: 20px;
+        padding-top: 0px;
     }
 }
 
@@ -80,6 +92,7 @@ a {
     text-align: center;
     padding: 30px;
     opacity: 65%;
+    padding-top: 70px;
 
     @media(max-width:786px) {
         font-size: 13px;
@@ -113,6 +126,7 @@ a {
     @media(max-width:786px) {
         font-size: 13px;
         padding: 3px;
+        padding-bottom: 10px;
         max-width: 350px;
     }
 
@@ -203,11 +217,11 @@ a {
     max-width: 600px;
     margin: 0 auto;
     font-family: 'Ibarra Real Nova', serif;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     text-align: justify;
 
     @media(max-width:786px) {
-        padding-bottom: 50px;
+        padding-bottom: 10px;
         padding-top: 0;
         width: 400px;
     }
@@ -272,6 +286,7 @@ a {
 
     &-link {
         transition: 0.7s ease;
+        color: rgb(156, 104, 130);
 
         &:hover {
             color: rgb(156, 104, 130);
@@ -311,8 +326,7 @@ a {
     background-color: white;
 }
 
-.parallax,
-.parallax2 {
+.parallax {
     background-image: url('../../images/background1.png');
     min-height: 700px;
     background-attachment: fixed;
@@ -325,11 +339,27 @@ a {
 
     @media(max-width:786px) {
         background-attachment: inherit !important;
-        min-height: 300px;
+        min-height: 200px;
     }
 
 }
 
+.parallax2 {
+    background-image: url('../../images/portfolio/8.jpg');
+    min-height: 700px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+
+    @media(max-width:786px) {
+        background-attachment: inherit !important;
+        min-height: 300px;
+    }
+}
 
 .portrait {
     width: 600px;
@@ -389,14 +419,6 @@ a {
     background-color: black;
     text-decoration-style: solid;
     text-align: justify;
-}
-
-.social {
-    padding-left: 120px;
-
-    @media(max-width:786px) {
-        padding: 0;
-    }
 }
 
 .svg {
