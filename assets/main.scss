@@ -113,6 +113,7 @@ a {
         font-size: 13px;
         padding: 3px;
         max-width: 350px;
+        padding-left: 60px;
     }
 }
 
@@ -211,7 +212,7 @@ a {
     padding-left: 150px;
 
     @media (max-width: 786px) {
-        width: 400px;
+        width: 300px;
         padding: 0;
     }
 }
@@ -264,7 +265,7 @@ a {
     text-align: justify;
 
     @media (max-width: 786px) {
-        padding-left: 10px;
+        padding-left: 0px;
         padding-bottom: 10px;
         padding-top: 0;
         width: 300px;
