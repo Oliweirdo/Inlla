@@ -118,6 +118,23 @@ a:hover {
   }
 }
 
+.quote__centered__large__gallery {
+  font-family: "Ibarra Real Nova", serif;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  opacity: 65%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 786px) {
+  .quote__centered__large__gallery {
+    font-size: 13px;
+    padding: 3px;
+    max-width: 350px;
+  }
+}
+
 .quote__centered__small {
   font-family: "Ibarra Real Nova", serif;
   text-align: center;
@@ -383,28 +400,36 @@ a:hover {
   justify-content: space-between;
   font-family: "Ibarra Real Nova", serif;
 }
+@media (max-width: 500px) {
+  .footer {
+    padding-top: 50px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
 .footer__logo {
+  display: block;
   height: 200px;
   width: auto;
   padding-top: 25px;
   padding-left: 50px;
 }
-@media (max-width: 786px) {
-  .footer {
-    display: block;
-    text-align: center;
-    padding-top: 50px;
+@media (max-width: 500px) {
+  .footer__logo {
+    height: 200px;
   }
 }
 
 .col {
   opacity: 50%;
   padding-top: 20px;
+  margin: 0 auto;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   .col {
     display: block;
     text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -413,6 +438,13 @@ a:hover {
   background-color: black;
   text-decoration-style: solid;
   text-align: justify;
+}
+@media (max-width: 500px) {
+  .row {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .svg {

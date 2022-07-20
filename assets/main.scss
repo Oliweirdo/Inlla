@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 
 * {
     padding: 0%;
@@ -11,7 +11,7 @@
     -o-user-select: none;
     user-select: none;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         overflow-x: hidden;
     }
 }
@@ -21,36 +21,34 @@
     color: rgba(0, 0, 0, 0.7);
     align-items: center;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         padding-bottom: 20px;
-
     }
 }
 
 header {
-
     background-color: black;
 }
 
 .title {
-    font-family: 'Cinzel', serif;
+    font-family: "Cinzel", serif;
     text-align: center;
     color: rgb(156, 104, 130);
     padding-top: 20px;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         font-size: 20px;
     }
 }
 
 .title__main {
-    font-family: 'Cinzel', serif;
+    font-family: "Cinzel", serif;
     text-align: center;
     color: rgb(156, 104, 130);
     padding-top: 100px;
     padding-bottom: 20px;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         font-size: 20px;
         padding-top: 0px;
     }
@@ -71,7 +69,7 @@ a {
 }
 
 .quote {
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: "Ibarra Real Nova", serif;
     padding: 25px;
     text-align: center;
     padding: 30px;
@@ -79,7 +77,7 @@ a {
     text-align: justify;
     font-size: 20px;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         font-size: 13px;
         padding: 3px;
         max-width: 350px;
@@ -88,28 +86,43 @@ a {
 }
 
 .quote__centered {
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: "Ibarra Real Nova", serif;
     text-align: center;
     padding: 30px;
     opacity: 65%;
     padding-top: 70px;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         font-size: 13px;
         padding: 3px;
         max-width: 350px;
     }
-
 }
 
 .quote__centered__large {
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: "Ibarra Real Nova", serif;
     text-align: center;
     font-size: 25px;
     font-weight: 300;
     opacity: 65%;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
+        font-size: 13px;
+        padding: 3px;
+        max-width: 350px;
+    }
+}
+
+.quote__centered__large__gallery {
+    font-family: "Ibarra Real Nova", serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    opacity: 65%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media (max-width: 786px) {
         font-size: 13px;
         padding: 3px;
         max-width: 350px;
@@ -117,19 +130,18 @@ a {
 }
 
 .quote__centered__small {
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: "Ibarra Real Nova", serif;
     text-align: center;
     font-size: 20px;
     font-weight: 300;
     opacity: 65%;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         font-size: 13px;
         padding: 3px;
         padding-bottom: 10px;
         max-width: 350px;
     }
-
 }
 
 .leftside {
@@ -138,7 +150,7 @@ a {
     font-size: 1vw;
     max-width: 800px;
     margin: 0 auto;
-    font-family: 'Cinzel', serif;
+    font-family: "Cinzel", serif;
     height: auto;
 
     max-height: 600px;
@@ -147,7 +159,6 @@ a {
         height: 100vh;
         width: 450px;
     }
-
 }
 
 .cennik {
@@ -162,9 +173,7 @@ a {
         max-width: 350px;
         height: auto;
     }
-
 }
-
 
 .rightside {
     text-align: center;
@@ -172,7 +181,7 @@ a {
     font-size: 1vw;
     max-width: 00px;
     margin: 0 auto;
-    font-family: 'Cinzel', serif;
+    font-family: "Cinzel", serif;
     height: auto;
     padding-left: 300px;
     text-align: justify;
@@ -184,7 +193,7 @@ a {
     width: 600px;
     padding-left: 150px;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         width: 400px;
         padding: 0;
     }
@@ -199,14 +208,12 @@ a {
     font-size: 1vw;
     text-align: justify;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         font-size: 13px;
         max-width: 350px;
         padding-top: 50px;
     }
-
 }
-
 
 .right__side__about,
 .left__side__about {
@@ -216,27 +223,25 @@ a {
     font-size: 1vw;
     max-width: 600px;
     margin: 0 auto;
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: "Ibarra Real Nova", serif;
     padding-bottom: 100px;
     text-align: justify;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         padding-bottom: 10px;
         padding-top: 0;
         width: 400px;
     }
-
 }
 
 .aboutme {
     margin: 0 auto;
-
 }
 
 .right__side__about {
     margin: 0 auto;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         padding-bottom: 50px;
         padding-top: 0;
         width: 400px;
@@ -252,7 +257,7 @@ a {
     padding-top: 10px;
     opacity: 50%;
     color: rgb(180, 120, 150);
-    font-family: 'Cinzel', serif;
+    font-family: "Cinzel", serif;
 
     &-logo {
         height: 75px;
@@ -266,7 +271,7 @@ a {
         align-items: center;
         gap: 60px;
 
-        @media(max-width:786px) {
+        @media (max-width: 786px) {
             position: fixed;
             left: -100%;
             top: 70px;
@@ -292,15 +297,13 @@ a {
         &:hover {
             color: rgb(156, 104, 130);
         }
-
     }
 
     &-item {
-        @media(max-width:786px) {
+        @media (max-width: 786px) {
             margin: 16px;
             background: none;
         }
-
     }
 }
 
@@ -328,7 +331,7 @@ a {
 }
 
 .parallax {
-    background-image: url('../../images/background1.png');
+    background-image: url("../../images/background1.png");
     min-height: 700px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -338,15 +341,14 @@ a {
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         background-attachment: inherit !important;
         min-height: 200px;
     }
-
 }
 
 .parallax2 {
-    background-image: url('../../images/portfolio/8.jpg');
+    background-image: url("../../images/portfolio/8.jpg");
     min-height: 700px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -356,7 +358,7 @@ a {
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         background-attachment: inherit !important;
         min-height: 300px;
     }
@@ -368,7 +370,7 @@ a {
     padding-top: 150px;
     border-bottom: double 5px rgba(0, 0, 0, 0.5);
 
-    @media(max-width:786px) {
+    @media (max-width: 786px) {
         width: 400px;
         font-size: 13px;
         overflow-x: hidden;
@@ -382,36 +384,39 @@ a {
     opacity: 100%;
 }
 
-
-
 .footer {
     color: aliceblue;
     justify-content: space-between;
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: "Ibarra Real Nova", serif;
 
+    @media (max-width: 500px) {
+        padding-top: 50px;
+        margin: 0 auto;
+        justify-content: center;
+    }
 
     &__logo {
+        display: block;
         height: 200px;
         width: auto;
         padding-top: 25px;
         padding-left: 50px;
-    }
 
-    @media(max-width:786px) {
-        display: block;
-        text-align: center;
-        padding-top: 50px;
+        @media (max-width: 500px) {
+            height: 200px;
+        }
     }
 }
 
 .col {
     opacity: 50%;
     padding-top: 20px;
+    margin: 0 auto;
 
-
-    @media(max-width:786px) {
+    @media (max-width: 500px) {
         display: block;
         text-align: center;
+        margin: 0 auto;
     }
 }
 
@@ -420,13 +425,19 @@ a {
     background-color: black;
     text-decoration-style: solid;
     text-align: justify;
+
+    @media (max-width: 500px) {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 .svg {
     padding-top: 20px;
 }
 
-@media(max-width:786px) {
+@media (max-width: 786px) {
     .hamburger {
         display: block;
     }
@@ -442,5 +453,4 @@ a {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
 }
