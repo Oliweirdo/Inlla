@@ -217,6 +217,18 @@ a {
     }
 }
 
+.portrait__small__main {
+    padding-top: 70px;
+    width: 600px;
+    padding-left: 50px;
+
+    @media (max-width: 786px) {
+        width: 300px;
+        padding: 0;
+    }
+}
+
+
 .lead__about {
     margin: 0 auto;
     text-align: center;
