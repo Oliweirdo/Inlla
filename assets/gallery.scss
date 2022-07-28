@@ -23,6 +23,20 @@
 
 }
 
+.offer {
+    padding: 8px;
+    width: 1000px;
+    margin: 0 auto;
+
+    @media (max-width: 786px) {
+        padding: 0;
+        padding-top: 2px;
+        width: 400px;
+        display: block;
+    }
+}
+
+
 .centered {
     margin: 0 auto;
     width: 1400px;
