@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+:root {
+  --bgcolor: white;
+  --btext: rgba(0, 0, 0, 0.7);
+  --titlecolor: rgb(156, 104, 130);
+  --pink: rgb(180, 120, 150);
+}
+
 * {
   padding: 0%;
   margin: 0%;
@@ -9,6 +16,7 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  font-family: "Ibarra Real Nova", serif;
 }
 @media (max-width: 786px) {
   * {
@@ -17,11 +25,11 @@
 }
 
 .about {
-  background-color: white;
-  color: rgba(0, 0, 0, 0.7);
+  background-color: var(--bgcolor);
+  color: var(--btext);
   align-items: center;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   .about {
     padding-bottom: 20px;
   }
@@ -34,10 +42,10 @@ header {
 .title {
   font-family: "Cinzel", serif;
   text-align: center;
-  color: rgb(156, 104, 130);
+  color: var(--titlecolor);
   padding-top: 20px;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   .title {
     font-size: 20px;
     overflow: hidden;
@@ -47,125 +55,14 @@ header {
 .title__main {
   font-family: "Cinzel", serif;
   text-align: center;
-  color: rgb(156, 104, 130);
+  color: var(--titlecolor);
   padding-top: 200px;
   padding-bottom: 20px;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   .title__main {
     font-size: 20px;
     padding-top: 0px;
-  }
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  color: aliceblue;
-  text-decoration: none;
-  transition: 0.7s ease;
-}
-a:hover {
-  color: rgb(156, 104, 130);
-}
-
-.quote {
-  font-family: "Ibarra Real Nova", serif;
-  padding: 25px;
-  text-align: center;
-  padding: 30px;
-  opacity: 65%;
-  text-align: justify;
-  font-size: 20px;
-}
-@media (max-width: 786px) {
-  .quote {
-    font-size: 13px;
-    padding: 3px;
-    max-width: 350px;
-    padding-top: 20px;
-  }
-}
-
-.quote__centered {
-  font-family: "Ibarra Real Nova", serif;
-  text-align: center;
-  padding: 30px;
-  opacity: 65%;
-  padding-top: 70px;
-  padding-bottom: 50px;
-}
-@media (max-width: 786px) {
-  .quote__centered {
-    font-size: 13px;
-    padding: 3px;
-    max-width: 350px;
-  }
-}
-
-.quote__centered__main {
-  font-family: "Ibarra Real Nova", serif;
-  text-align: center;
-  font-weight: bold;
-  opacity: 65%;
-  padding-top: 70px;
-}
-@media (max-width: 786px) {
-  .quote__centered__main {
-    font-size: 13px;
-    padding: 3px;
-    max-width: 350px;
-    padding-left: 60px;
-  }
-}
-
-.quote__centered__large {
-  font-family: "Ibarra Real Nova", serif;
-  text-align: center;
-  font-size: 25px;
-  font-weight: 300;
-  opacity: 65%;
-}
-@media (max-width: 786px) {
-  .quote__centered__large {
-    font-size: 13px;
-    padding: 3px;
-    max-width: 350px;
-  }
-}
-
-.quote__centered__large__gallery {
-  font-family: "Ibarra Real Nova", serif;
-  text-align: center;
-  font-size: 25px;
-  font-weight: 300;
-  opacity: 65%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-@media (max-width: 786px) {
-  .quote__centered__large__gallery {
-    font-size: 13px;
-    padding: 3px;
-    max-width: 350px;
-  }
-}
-
-.quote__centered__small {
-  font-family: "Ibarra Real Nova", serif;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 300;
-  opacity: 65%;
-}
-@media (max-width: 786px) {
-  .quote__centered__small {
-    font-size: 13px;
-    padding: 3px;
-    padding-bottom: 10px;
-    max-width: 4000px;
   }
 }
 
@@ -219,7 +116,7 @@ a:hover {
   width: 600px;
   padding-left: 150px;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   .portrait_small {
     width: 300px;
     padding: 0;
@@ -231,7 +128,7 @@ a:hover {
   width: 600px;
   padding-left: 50px;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   .portrait__small__main {
     width: 300px;
     padding: 0;
@@ -247,7 +144,7 @@ a:hover {
   font-size: 1vw;
   text-align: justify;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   .lead__about {
     font-size: 13px;
     max-width: 350px;
@@ -263,11 +160,10 @@ a:hover {
   font-size: 1vw;
   max-width: 600px;
   margin: 0 auto;
-  font-family: "Ibarra Real Nova", serif;
   padding-bottom: 25px;
   text-align: justify;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   .right__side__about,
 .left__side__about {
     padding-left: 10px;
@@ -284,11 +180,10 @@ a:hover {
   font-size: 1vw;
   max-width: 600px;
   margin: 0 auto;
-  font-family: "Ibarra Real Nova", serif;
   padding-bottom: 25px;
   text-align: justify;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   .right__side,
 .left__side {
     padding-left: 0px;
@@ -305,12 +200,25 @@ a:hover {
 .right__side__about {
   margin: 0 auto;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   .right__side__about {
     padding-bottom: 50px;
     padding-top: 0;
     width: 400px;
   }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: 0.7s ease;
+}
+a:hover {
+  color: var(--pink);
 }
 
 .nav {
@@ -321,7 +229,7 @@ a:hover {
   padding: 0 24px;
   padding-top: 10px;
   opacity: 50%;
-  color: rgb(180, 120, 150);
+  color: var(--pink);
   font-family: "Cinzel", serif;
 }
 .nav-logo {
@@ -335,7 +243,7 @@ a:hover {
   align-items: center;
   gap: 60px;
 }
-@media (max-width: 786px) {
+@media (max-width: 500px) {
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -355,22 +263,17 @@ a:hover {
 }
 .nav-link {
   transition: 0.7s ease;
-  color: rgb(207, 134, 171);
+  font-family: "Cinzel", serif;
+  color: var(--pink);
 }
 .nav-link:hover {
-  color: rgb(156, 104, 130);
+  color: var(--pink);
 }
 @media (max-width: 786px) {
   .nav-item {
     margin: 16px;
     background: none;
   }
-}
-
-.mainpage {
-  border-radius: 50%;
-  max-height: 400px;
-  width: auto;
 }
 
 .hamburger {
@@ -390,39 +293,45 @@ a:hover {
   background-color: white;
 }
 
+.mainpage {
+  border-radius: 50%;
+  max-height: 400px;
+  width: auto;
+}
+
 .parallax {
   background-image: url("../../images/background1.png");
-  min-height: 700px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: white;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
 }
 @media (max-width: 786px) {
   .parallax {
-    background-attachment: inherit !important;
     min-height: 200px;
   }
 }
 
 .parallax2 {
   background-image: url("../../images/portfolio/8.jpg");
+}
+@media (max-width: 786px) {
+  .parallax2 {
+    min-height: 300px;
+  }
+}
+
+.parallax,
+.parralax2 {
   min-height: 700px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: black;
+  background-color: var(--bgcolor);
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
 }
 @media (max-width: 786px) {
-  .parallax2 {
+  .parallax,
+.parralax2 {
     background-attachment: inherit !important;
-    min-height: 300px;
   }
 }
 
