@@ -49,8 +49,9 @@
 
     &__small {
         padding-top: 100px;
+        padding-bottom: 50px;
         margin: 0 auto;
-        width: 700px;
+        width: 1000px;
 
         @media (max-width: 786px) {
             width: 300px;
@@ -131,7 +132,7 @@
     --gap: 5px;
     --num-cols: 3;
     padding: var(--gap);
-    width: 700px;
+    width: 900px;
 
     padding-right: 5px;
     display: grid;
@@ -185,7 +186,7 @@
 }
 
 .grid__small>img {
-    width: 200px;
+    width: 300px;
     height: auto;
     max-height: 450px;
     padding-bottom: 5px;
