@@ -67,7 +67,7 @@ header {
 }
 
 .leftside {
-  padding-top: 100px;
+  padding-top: 170px;
   text-align: center;
   align-items: center;
   font-size: 1vw;
@@ -115,7 +115,8 @@ header {
 .portrait_small {
   padding-top: 70px;
   width: 600px;
-  padding-left: 150px;
+  padding-left: 30px;
+  border-bottom: 5px double;
 }
 @media (max-width: 500px) {
   .portrait_small {
@@ -128,6 +129,7 @@ header {
   padding-top: 70px;
   width: 600px;
   padding-left: 50px;
+  border-bottom: 5px double;
 }
 @media (max-width: 500px) {
   .portrait__small__main {
