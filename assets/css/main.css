@@ -128,7 +128,6 @@ header {
 .portrait__small__main {
   padding-top: 70px;
   width: 600px;
-  padding-left: 50px;
   border-bottom: 5px double;
 }
 @media (max-width: 500px) {
@@ -303,24 +302,23 @@ a:hover {
 }
 
 .parallax {
+  min-height: 700px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--bgcolor);
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
   background-image: url("../../images/background1.png");
 }
 @media (max-width: 786px) {
   .parallax {
-    min-height: 200px;
+    background-attachment: inherit !important;
+    max-height: 200px;
   }
 }
 
-.parallax2 {
-  background-image: url("../../images/portfolio/8.jpg");
-}
-@media (max-width: 786px) {
-  .parallax2 {
-    min-height: 300px;
-  }
-}
-
-.parallax,
 .parralax2 {
   min-height: 700px;
   background-attachment: fixed;
@@ -330,11 +328,12 @@ a:hover {
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
+  background-image: url("../../images/portfolio/8.jpg");
 }
 @media (max-width: 786px) {
-  .parallax,
-.parralax2 {
+  .parralax2 {
     background-attachment: inherit !important;
+    min-height: 300px;
   }
 }
 
