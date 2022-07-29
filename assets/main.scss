@@ -107,7 +107,7 @@ header {
     margin: 0 auto;
     font-family: "Cinzel", serif;
     height: auto;
-    padding-left: 300px;
+
     text-align: justify;
     max-height: 600px;
 }
@@ -115,7 +115,6 @@ header {
 .portrait_small {
     padding-top: 70px;
     width: 600px;
-    padding-left: 30px;
     border-bottom: 5px double;
 
     @media (max-width: 500px) {
