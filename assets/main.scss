@@ -315,13 +315,12 @@ a {
 
     @media (max-width: 786px) {
         background-attachment: inherit !important;
-        max-height: 200px;
-
+        min-height: 200px;
     }
 }
 
 
-.parralax2 {
+.parallax2 {
     min-height: 700px;
     background-attachment: fixed;
     background-repeat: no-repeat;
