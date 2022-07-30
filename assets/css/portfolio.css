@@ -6,7 +6,6 @@ body {
 .container {
   max-width: 100rem;
   margin: 0 auto;
-  padding: 0 2rem 2rem;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -29,7 +28,7 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  margin: -1rem -1rem;
+  margin: 0 auto;
 }
 .gallery__image {
   display: block;
@@ -37,6 +36,12 @@ body {
   height: 100%;
   object-fit: cover;
   transition: transform 400ms ease-out;
+}
+@media (max-width: 750px) {
+  .gallery__image {
+    width: 300px;
+    height: auto;
+  }
 }
 .gallery__image:hover {
   transform: scale(1.15);
@@ -46,14 +51,25 @@ body {
   margin: 1rem;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
+@media (max-width: 750px) {
+  .gallery__item {
+    width: 300px;
+    height: auto;
+  }
+}
 .gallery__item__portfolio {
   padding-bottom: 50px;
   text-align: center;
   flex: 1 0 24rem;
   margin: 1rem;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-  padding-bottom: 50px;
   text-align: center;
+}
+@media (max-width: 750px) {
+  .gallery__item__portfolio {
+    width: 300px;
+    height: auto;
+  }
 }
 
 @supports (display: grid) {
@@ -64,7 +80,14 @@ body {
   }
   .gallery,
 .gallery-image {
-    margin: 0;
+    margin: auto 0;
+  }
+  @media (max-width: 750px) {
+    .gallery,
+.gallery-image {
+      width: 300px;
+      height: auto;
+    }
   }
 }
 

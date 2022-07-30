@@ -51,6 +51,18 @@ header {
     }
 }
 
+.title__small {
+    font-family: "Cinzel", serif;
+    text-align: center;
+    color: var(--titlecolor);
+    padding-top: 20px;
+
+    @media (max-width: 500px) {
+        font-size: 15px;
+        overflow: hidden;
+    }
+}
+
 .title__main {
     font-family: "Cinzel", serif;
     text-align: center;
@@ -94,7 +106,7 @@ header {
 
     @media (min-width: 750px) {
         padding: 0;
-        max-width: 350px;
+        max-width: 200px;
         height: auto;
     }
 }
@@ -177,6 +189,7 @@ header {
     font-size: 1vw;
     max-width: 600px;
     margin: 0 auto;
+    padding-top: 50px;
     padding-bottom: 25px;
     text-align: justify;
 

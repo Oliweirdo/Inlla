@@ -20,7 +20,16 @@
     .gallery,
     .gallery-image {
         margin: 0;
+        width: 600;
+        height: 400;
+
+        @media (max-width: 750px) {
+            width: 300px;
+            height: auto;
+
+        }
     }
+
 
 }
 
@@ -29,10 +38,10 @@
     width: 1000px;
     margin: 0 auto;
 
-    @media (max-width: 786px) {
+    @media (max-width: 750px) {
         padding: 0;
         padding-top: 2px;
-        width: 400px;
+        width: 300px;
         display: block;
     }
 }

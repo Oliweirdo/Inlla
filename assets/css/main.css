@@ -52,6 +52,19 @@ header {
   }
 }
 
+.title__small {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  color: var(--titlecolor);
+  padding-top: 20px;
+}
+@media (max-width: 500px) {
+  .title__small {
+    font-size: 15px;
+    overflow: hidden;
+  }
+}
+
 .title__main {
   font-family: "Cinzel", serif;
   text-align: center;
@@ -94,7 +107,7 @@ header {
 @media (min-width: 750px) {
   .cennik {
     padding: 0;
-    max-width: 350px;
+    max-width: 200px;
     height: auto;
   }
 }
@@ -180,6 +193,7 @@ header {
   font-size: 1vw;
   max-width: 600px;
   margin: 0 auto;
+  padding-top: 50px;
   padding-bottom: 25px;
   text-align: justify;
 }
@@ -305,7 +319,7 @@ a:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--bgcolor);
+  background-color: black;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
@@ -323,7 +337,7 @@ a:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--bgcolor);
+  background-color: black;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
@@ -332,7 +346,7 @@ a:hover {
 @media (max-width: 786px) {
   .parallax2 {
     background-attachment: inherit !important;
-    min-height: 300px;
+    min-height: 400px;
   }
 }
 
@@ -363,6 +377,7 @@ a:hover {
   color: aliceblue;
   justify-content: space-between;
   font-family: "Ibarra Real Nova", serif;
+  flex-shrink: 0;
 }
 @media (max-width: 500px) {
   .footer {
