@@ -129,7 +129,7 @@
 @media (max-width: 750px) {
   .grid__triple > img {
     padding-top: 2px;
-    width: 114px;
+    width: 110px;
     padding-bottom: 2px;
   }
 }
@@ -170,7 +170,7 @@
   .grid__penta > img {
     padding-top: 2px;
     width: auto;
-    height: 95px;
+    height: 80px;
   }
 }
 
@@ -187,7 +187,7 @@
     padding: 1px;
     padding-top: 3px;
     padding-bottom: 3px;
-    width: 97px;
+    width: 83px;
     gap: 1px;
     max-height: 128.66px;
   }
