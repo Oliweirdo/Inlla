@@ -218,6 +218,8 @@ header {
 li {
     list-style: none;
     text-transform: uppercase;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 a {
@@ -384,6 +386,7 @@ a {
         padding-top: 50px;
         margin: 0 auto;
         justify-content: center;
+
     }
 
     &__logo {
@@ -394,8 +397,9 @@ a {
         padding-left: 50px;
 
         @media (max-width: 500px) {
-            width: 350px;
-            padding-right: 40px;
+            width: 200px;
+            height: auto;
+            padding: 0;
             margin: 0 auto;
         }
     }
@@ -407,9 +411,9 @@ a {
     margin: 0 auto;
 
     @media (max-width: 500px) {
-        display: block;
         text-align: center;
         margin: 0 auto;
+        width: 300px;
     }
 }
 
@@ -424,6 +428,7 @@ a {
         display: block;
         text-align: center;
         margin: 0 auto;
+
     }
 }
 
