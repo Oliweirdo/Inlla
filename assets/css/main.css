@@ -225,6 +225,7 @@ header {
 li {
   list-style: none;
   text-transform: uppercase;
+  font-size: smaller;
   max-width: 300px;
   margin: 0 auto;
 }
@@ -412,8 +413,7 @@ a:hover {
 @media (max-width: 500px) {
   .col {
     text-align: center;
-    margin: 0 auto;
-    width: 300px;
+    align-items: center;
   }
 }
 
@@ -426,7 +426,6 @@ a:hover {
 }
 @media (max-width: 500px) {
   .row {
-    display: block;
     text-align: center;
     margin: 0 auto;
   }

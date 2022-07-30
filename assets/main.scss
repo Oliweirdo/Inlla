@@ -218,6 +218,7 @@ header {
 li {
     list-style: none;
     text-transform: uppercase;
+    font-size: smaller;
     max-width: 300px;
     margin: 0 auto;
 }
@@ -412,8 +413,8 @@ a {
 
     @media (max-width: 500px) {
         text-align: center;
-        margin: 0 auto;
-        width: 300px;
+        align-items: center;
+
     }
 }
 
@@ -425,7 +426,6 @@ a {
     margin: 0 auto;
 
     @media (max-width: 500px) {
-        display: block;
         text-align: center;
         margin: 0 auto;
 
