@@ -100,7 +100,7 @@
   .grid__double > img {
     padding-top: 3px;
     padding-bottom: 3px;
-    width: 197px;
+    width: 173px;
   }
 }
 
@@ -129,7 +129,7 @@
 @media (max-width: 750px) {
   .grid__triple > img {
     padding-top: 2px;
-    width: 110px;
+    width: 114px;
     padding-bottom: 2px;
   }
 }
@@ -187,7 +187,7 @@
     padding: 1px;
     padding-top: 3px;
     padding-bottom: 3px;
-    width: 83px;
+    width: 84px;
     gap: 1px;
     max-height: 128.66px;
   }
