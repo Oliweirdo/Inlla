@@ -4,7 +4,7 @@
     --bgcolor: white;
     --btext: rgba(0, 0, 0, 0.7);
     --titlecolor: rgb(156, 104, 130);
-    --pink: rgb(180, 120, 150);
+    --pink: rgb(231, 171, 201);
 }
 
 
@@ -46,7 +46,7 @@ header {
     padding-top: 20px;
 
     @media (max-width: 500px) {
-        font-size: 15px;
+        font-size: 20px;
         overflow: hidden;
     }
 }
@@ -204,6 +204,7 @@ header {
 
 li {
     list-style: none;
+    text-transform: uppercase;
 }
 
 a {
@@ -347,11 +348,13 @@ a {
     border-bottom: double 5px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 786px) {
-        width: 400px;
+        width: 300px;
         font-size: 13px;
         overflow-x: hidden;
         padding-top: 50px;
         margin: 0 auto;
+        justify-content: center;
+        margin-left: 50px;
     }
 }
 
@@ -381,7 +384,7 @@ a {
         @media (max-width: 500px) {
             width: 350px;
             padding-right: 40px;
-            padding-left: -15px;
+            margin: 0 auto;
         }
     }
 }
@@ -403,6 +406,7 @@ a {
     background-color: black;
     text-decoration-style: solid;
     text-align: justify;
+    margin: 0 auto;
 
     @media (max-width: 500px) {
         display: block;

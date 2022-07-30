@@ -35,8 +35,9 @@
 
             @media (max-width: 786px) {
                 font-size: 13px;
-                padding: 3px;
+                padding-top: 3px;
                 max-width: 350px;
+                margin: 0 auto;
             }
 
             &__gallery {

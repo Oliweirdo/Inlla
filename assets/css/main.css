@@ -3,7 +3,7 @@
   --bgcolor: white;
   --btext: rgba(0, 0, 0, 0.7);
   --titlecolor: rgb(156, 104, 130);
-  --pink: rgb(180, 120, 150);
+  --pink: rgb(231, 171, 201);
 }
 
 * {
@@ -47,7 +47,7 @@ header {
 }
 @media (max-width: 500px) {
   .title {
-    font-size: 15px;
+    font-size: 20px;
     overflow: hidden;
   }
 }
@@ -210,6 +210,7 @@ header {
 
 li {
   list-style: none;
+  text-transform: uppercase;
 }
 
 a {
@@ -343,11 +344,13 @@ a:hover {
 }
 @media (max-width: 786px) {
   .portrait {
-    width: 400px;
+    width: 300px;
     font-size: 13px;
     overflow-x: hidden;
     padding-top: 50px;
     margin: 0 auto;
+    justify-content: center;
+    margin-left: 50px;
   }
 }
 
@@ -379,7 +382,7 @@ a:hover {
   .footer__logo {
     width: 350px;
     padding-right: 40px;
-    padding-left: -15px;
+    margin: 0 auto;
   }
 }
 
@@ -401,6 +404,7 @@ a:hover {
   background-color: black;
   text-decoration-style: solid;
   text-align: justify;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .row {

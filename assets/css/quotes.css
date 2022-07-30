@@ -38,8 +38,9 @@
 @media (max-width: 786px) {
   .quote__centered__large {
     font-size: 13px;
-    padding: 3px;
+    padding-top: 3px;
     max-width: 350px;
+    margin: 0 auto;
   }
 }
 .quote__centered__large__gallery {
